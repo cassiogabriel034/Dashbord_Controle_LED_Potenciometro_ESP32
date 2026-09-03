@@ -1,0 +1,45 @@
+.cabecalho {
+  background-color: #1e293b;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  border-bottom: 2px solid #334155;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.logo-container h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.aviso-faixa {
+  color: #94a3b8;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.menu-navegacao {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menu-navegacao a {
+  color: #4ade80;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-navegacao a:hover {
+  background-color: #334155;
+}

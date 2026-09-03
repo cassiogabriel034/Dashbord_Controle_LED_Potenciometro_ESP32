@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f172a; /* Fundo escuro moderno */
+}
+
+.layout-principal {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Garante que ocupe a tela toda */
+}
+
+.conteudo-principal {
+  flex: 1; /* Faz o conteúdo crescer e empurrar o footer */
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.tela-temporaria {
+  color: #64748b;
+  font-size: 1.5rem;
+  margin-top: 50px;
+}

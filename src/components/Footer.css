@@ -1,0 +1,7 @@
+.rodape {
+  background-color: #0f172a;
+  color: #64748b;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: auto; /* Empurra o rodapé para o final da tela */
+}
