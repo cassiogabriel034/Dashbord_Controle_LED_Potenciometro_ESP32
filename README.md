@@ -46,7 +46,6 @@ A API gerencia o recebimento das leituras e fornece endpoints para consumo do fr
 1. Abra o terminal na pasta do backend:
 ```bash
 cd backend_iot
-
 ```
 
 
@@ -55,7 +54,6 @@ cd backend_iot
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\activate
-
 ```
 
 
@@ -63,7 +61,6 @@ python -m venv .venv
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
-
 ```
 
 
@@ -72,21 +69,18 @@ source .venv/bin/activate
 3. Instale as dependências:
 ```bash
 pip install -r requirements.txt
-
 ```
 
 
 4. Inicialize a tabela do banco SQLite:
 ```bash
 python database.py
-
 ```
 
 
 5. Inicie o servidor FastAPI acessível para a rede:
 ```bash
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
-
 ```
 
 
@@ -110,7 +104,6 @@ O firmware lê o pino analógico 34 (ADC1), calcula a faixa (0 a 3), chaveia os 
 ```cpp
 // Para execução na mesma máquina/rede local:
 const char* serverUrl = "http://SEU_IP_LOCAL:8000/api/dados";
-
 ```
 
 
@@ -125,18 +118,13 @@ Caso execute o circuito diretamente pelo navegador (`wokwi.com`):
 * Se o backend estiver exposto via Tailscale Funnel, substitua `serverUrl` pela URL pública com HTTPS:
 ```cpp
 const char* serverUrl = "https://seu-dominio.tailscale.net/api/dados";
-
-```
-
-
-
 ```
 
 ---
 
 ### PARTE 2 (Do Frontend até o final)
 
-```markdown
+
 ## 💻 3. Front-end Dashboard (`frontend_iot`)
 
 Construído com React e Vite, dispensando frameworks de CSS no HTML e utilizando Flexbox nativo para visualização responsiva.
@@ -144,7 +132,6 @@ Construído com React e Vite, dispensando frameworks de CSS no HTML e utilizando
 ### Dependências
 ```bash
 npm install react-router-dom react-bootstrap-icons
-
 ```
 
 ### Rodando Localmente
@@ -152,21 +139,18 @@ npm install react-router-dom react-bootstrap-icons
 1. Acesse o diretório do frontend:
 ```bash
 cd frontend_iot
-
 ```
 
 
 2. Instale os pacotes:
 ```bash
 npm install
-
 ```
 
 
 3. Inicie o servidor Vite liberando acesso na rede interna:
 ```bash
 npm run dev -- --host
-
 ```
 
 
@@ -183,7 +167,6 @@ O frontend pode ser compilado como site estático e hospedado gratuitamente no G
 1. Instale o pacote `gh-pages` como dependência de desenvolvimento:
 ```bash
 npm install gh-pages --save-dev
-
 ```
 
 
