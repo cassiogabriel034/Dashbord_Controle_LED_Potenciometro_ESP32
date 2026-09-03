@@ -3,7 +3,7 @@ import usePolling from '../../hooks/usePolling';
 import './LedsLigados.css';
 
 // Substitua pelo IP da máquina se for testar no celular
-const API_URL_ATUAL = "http://localhost:8000/api/dados/atual";
+const API_URL_ATUAL = "http://192.168.0.9:8000/api/dados/atual";
 
 function LedsLigados({ setFaixaAtual }) {
   const { dados, erro, statusConexao } = usePolling(API_URL_ATUAL, 1500);
