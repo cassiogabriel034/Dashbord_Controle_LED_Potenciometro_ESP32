@@ -2,7 +2,7 @@ import React from 'react';
 import usePolling from '../../hooks/usePolling';
 import './Historico.css';
 
-const API_URL_HISTORICO = "http://192.168.0.9:8000/api/dados/historico";
+const API_URL_HISTORICO = "http://localhost:8000/api/dados/historico";
 
 function Historico() {
   const { dados, statusConexao } = usePolling(API_URL_HISTORICO, 3000);
